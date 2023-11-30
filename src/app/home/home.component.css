@@ -1,0 +1,119 @@
+/* ==========> Rozdział / Strony <========= */
+.section {
+    padding: 10rem 0 2% 0;
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.section-title p {
+    padding-bottom: 15px;
+    margin-bottom: 1px;
+    position: relative;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #dde2f4;
+}
+
+.section-title p::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 70px;
+    height: 2px;
+    background: #99a1ba;
+    bottom: 0;
+    left: calc(50% - 30px);
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 4rem 0 1%;
+    }
+
+    .section-title p {
+        padding-bottom: 15px;
+        margin-bottom: 1px;
+        position: relative;
+        font-size: 3.6rem;
+        font-weight: 700;
+        color: #dde2f4;
+    }
+}
+/* ==========> Home / Rozdział <========= */
+.home {
+    padding: auto 0 15rem;
+}
+.home h1 {
+    margin: 0 0 10px 0;
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 56px;
+    color: #dde2f4;
+}
+
+.home h2 {
+    font-size: 3.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #dde2f4;
+}
+
+.home p {
+    color: #99a1ba;
+    font-weight: 600;
+    font-size: 2.1rem;
+}
+/* ==========> Home / Resposywność <========== */
+
+@media (max-width: 991px) {
+    .home {
+        height: calc(100vh - 72px);
+    }
+}
+
+@media (max-width: 768px) {
+    .home h1 {
+        font-size: 3.75rem;
+        line-height: 36px;
+    }
+
+    .home h2 {
+        font-size: 2.85rem;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+    .home p {
+        font-size: 2rem;
+    }
+}
+/* ==========> About / Rozdział <========= */
+.about {
+    padding: auto 0 15rem;
+}
+.about .about_text {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #99a1ba;
+}
+.about .about_text_tech {
+    font-size: 5rem;
+    font-weight: 500;
+}
+.about_line {
+    color: #dde2f4;
+}
+
+/* ==========> About / Resposywność <========== */
+@media (max-width: 768px) {
+    .about .about_text {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .about .about_text_tech {
+        font-size: 5rem;
+        font-weight: 500;
+    }
+}

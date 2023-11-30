@@ -7,13 +7,15 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:portfolio": "node dist/portfolio/server/server.mjs"
+    "serve:ssr:portfolio": "node dist/portfolio/server/server.mjs",
+    "predeploy": "ng build --configuration --base-href /portfolio/",
+    "deploy": "ngh --dir=dist/angular-nauka/browser/ --branch=gh-pages"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "^17.0.0",
     "@angular/common": "^17.0.0",
-    "@angular/compiler": "^17.0.0",
+    "@angular/compiler": "^17.0.5",
     "@angular/core": "^17.0.5",
     "@angular/forms": "^17.0.0",
     "@angular/platform-browser": "^17.0.0",
