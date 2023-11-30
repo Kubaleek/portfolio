@@ -11,12 +11,4 @@ import * as AOS from 'aos';
 })
 export class AppComponent {
   title = 'portfolio';
-  constructor(){}
-  ngOnInit(){
-    AOS.init(
-      {
-        once: true
-      }
-    );
-  }
 }
