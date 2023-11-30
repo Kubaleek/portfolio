@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink, RouterOutlet } from '@angular/router';
+import * as AOS from 'aos';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -10,5 +11,12 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'portfolio';
-  
+  constructor(){}
+  ngOnInit(){
+    AOS.init(
+      {
+        once: true
+      }
+    );
+  }
 }
