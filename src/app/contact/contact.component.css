@@ -1,0 +1,125 @@
+/* ==========> Rozdział / Strony <========= */
+.section {
+    padding: 10rem 0 2% 0;
+    position: relative;
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.section-title p {
+    padding-bottom: 15px;
+    margin-bottom: 1px;
+    position: relative;
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.section-title p::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 70px;
+    height: 2px;
+    background: #ffffff;
+    bottom: 0;
+    left: calc(50% - 30px);
+}
+
+.section-title-white {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.section-title-white p {
+    padding-bottom: 15px;
+    margin-bottom: 1px;
+    position: relative;
+    font-size: 40px;
+    font-weight: 700;
+    color: #182432;
+}
+
+.section-title-white p::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 70px;
+    height: 2px;
+    background: #182432;
+    bottom: 0;
+    left: calc(50% - 30px);
+}
+
+@media (max-width: 767px) {
+    .section {
+        padding: 4rem 0 1%;
+    }
+
+    .section-title p {
+        padding-bottom: 15px;
+        margin-bottom: 1px;
+        position: relative;
+        font-size: 35px;
+        font-weight: 700;
+        color: #ffffff;
+    }
+
+    .section-title-white p {
+        padding-bottom: 15px;
+        margin-bottom: 1px;
+        position: relative;
+        font-size: 35px;
+        font-weight: 700;
+        color: #182432;
+    }
+}
+/* ==========> Kontakt / Rozdział <========= */
+.contact {
+    padding: auto 0 15rem;
+}
+.contact h1 {
+    margin: 0 0 10px 0;
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 56px;
+    color: #dde2f4;
+}
+.contact .contact_text {
+    text-align: center;
+    font-size: 2.1rem;
+    color: #99a1ba;
+    font-weight: 500;
+}
+.contact .contact_links {
+    margin-top: 1rem;
+    font-size: 5rem;
+}
+.contact .contact_links .contact_link {
+    opacity: 0.7;
+    color: #dde2f4;
+    transition: 0.3s all;
+}
+.contact .contact_links .contact_link:hover {
+    opacity: 1;
+}
+.contact .s_p {
+    margin-left: 1rem;
+}
+@media (max-width: 991px) {
+    .contact {
+        height: calc(100vh - 72px);
+    }
+}
+@media (max-width: 768px) {
+    .contact .contact_text {
+        font-size: 2rem;
+    }
+    .contact .contact_links {
+        margin-top: 1rem;
+        font-size: 4rem;
+    } 
+}
