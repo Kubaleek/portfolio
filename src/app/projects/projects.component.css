@@ -51,13 +51,18 @@
     border: solid 1px #ffffff41;
 }
 .project h1 {
-    margin: 0 0 10px 0;
+    margin: 20px 0 10px 0;
     margin-bottom: 20px;
     font-size: 5rem;
     font-weight: 700;
     line-height: 56px;
     color: #dde2f4;
     text-align: center;
+}
+.project .project_line {
+    width: 3rem;
+    color: #fff;
+    height: 200px;
 }
 .project .portfolio_p {
     color: #99a1ba;
@@ -71,7 +76,7 @@
 }
 .project .portfolio_l {
     font-weight: 600;
-    font-size: 4rem;
+    font-size: 5rem;
 }
 .project .portfolio_l a {
     color: #99a1ba;
@@ -83,7 +88,18 @@
 .pm {
     margin-left: 1rem;
 }
-.project_line {
+.project .project_text {
+    font-weight: 500;
+    color: #99a1ba;
+}
+.project .project_text_tech {
+    font-size: 5rem;
+}
+.project .project_text_tech i{
+    border: 1px solid #99a1ba;
+    padding: 2rem;
+}
+.about_line {
     color: #dde2f4;
 }
 /* ==========> Portfolio / Resposywność <========== */
@@ -101,8 +117,11 @@
         font-size: 2rem;
         margin-bottom: 1rem;
     }
+    .project .project .project_text_tech {
+        font-size: 4rem;
+    }
     .project .porftolio_t {
-        font-size: 4.5rem;
+        font-size: 4rem;
     }
 }
 /* ==========> Portfolio /  Design Obrazka <========== */
