@@ -10,7 +10,7 @@
     "test": "ng test",
     "serve:ssr:portfolio": "node dist/portfolio/server/server.mjs",
     "predeploy": "ng build --configuration --base-href /portfolio/",
-    "deploy": "ngh --dir=dist/angular-nauka/browser/ --branch=gh-pages"
+    "deploy": "ngh --dir=dist/portfolio/browser/ --branch=gh-pages"
   },
   "private": true,
   "dependencies": {
