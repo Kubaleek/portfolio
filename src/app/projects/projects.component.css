@@ -68,7 +68,20 @@
     color: #99a1ba;
     font-weight: 600;
     font-size: 5rem;
-    text-align: center;
+}
+.project .portfolio_l {
+    font-weight: 600;
+    font-size: 4rem;
+}
+.project .portfolio_l a {
+    color: #99a1ba;
+    transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.project .portfolio_l a:hover {
+    color: #dde2f4;
+}
+.pm {
+    margin-left: 1rem;
 }
 .project_line {
     color: #dde2f4;
