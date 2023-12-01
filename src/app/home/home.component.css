@@ -102,6 +102,10 @@
     font-size: 5rem;
     font-weight: 500;
 }
+.about .about_text_tech i {
+    border: 1px solid #99a1ba;
+    padding: 2rem;
+}
 .about_line {
     color: #dde2f4;
 }
