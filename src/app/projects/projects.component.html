@@ -2,21 +2,46 @@
     <div class="container d-flex justify-content-center align-items-center">
         <div class="row justify-content-center align-items-center gx-5">
             <div class="col-lg-6 col-md-9 col-sm-10 px-16 py-12 justify-content-center align-items-center">
-                <img src="assets/images/1.png" class="img-fluid project_img" alt="vector strona">
+                <img src="assets/images/1.png" class="img-fluid project_img mb-3" alt="vector strona">
             </div>
-            <div class="col-lg-6 col-md-9 col-sm-10 px-16 py-12 justify-content-center align-items-center order-2 order-lg-0 mt-5">
+            <div *ngIf="!ViewProject" class="col-lg-6 col-md-9 col-sm-10 px-16 py-12 justify-content-center align-items-center order-2 order-lg-0 mt-5" >
                 <p class="portfolio_l text-center">
                     <a href="https://github.com/Kubaleek/portfolio"><i class="bi bi-github"></i></a>
-                    <a href="https://kubaleek.github.io/portfolio/home"><i class="bi bi-box-arrow-in-up-right pm"></i></a>
+                    <a><i class="bi bi-box-arrow-in-up-right pm" (click)="ViewOnProject('Portfolio')"></i></a>
                 </p>
-                <hr class="about_line my-4 mx-auto hr w-50">
-                <p class="project_text project_text_tech mt-5 text-center">
-                    <i class='bx bxl-html5'></i>
-                    <i class='bx bxl-css3'></i>
-                    <i class='bx bxl-angular'></i>
-                    <i class='bx bxl-typescript'></i>
-                </p>
-            </div>      
+                <hr class="project_line my-4 mx-auto hr w-25">
+            </div>     
+            <!-- Wyświetlanie informacji o projekcie --> 
+            <div *ngIf="ViewProject" class="col-lg-8 col-md-10 col-sm-10 px-16 py-12 justify-content-center align-items-center portfolio_box">
+                <!-- Informacje o wybranym projekcie -->
+                <h1 class="text-center">{{ ViewProject }}</h1>
+                <div class="projects_i align-items-center justify-content-center">
+                    <p class="portfolio_p text-center">
+                        Witaj! Stworzyłem mój pierwszy własny projekt portfolio które stanowi wizualne 
+                        i funkcjonalne zaplecze do prezentacji moich umiejętności i projektów. 
+                    </p>
+                    <p class="portfolio_l text-center">
+                        <a href="https://github.com/Kubaleek/portfolio"><i class="bi bi-github"></i></a>
+                        <a href="https://kubaleek.github.io/portfolio/"><i class="bi bi-box-arrow-in-up-right pm"></i></a>
+                    </p>
+                    <p class="project_text project_text_tech mt-5 text-center project_tech d-none d-md-block">
+                        <i class='bx bxl-html5'></i>
+                        <i class='bx bxl-css3'></i>
+                        <i class='bx bxl-angular'></i>
+                        <i class='bx bxl-typescript'></i>
+                    </p>
+                </div>
+                <div class="projects_b d-flex align-items-center justify-content-center mt-5 mb-5" >
+                    <button class="cssbuttons-io-button btn text-center" (click)="ViewOffProject()">Projekty
+                        <div class="icon">
+                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 </section>

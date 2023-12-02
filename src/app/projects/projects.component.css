@@ -59,11 +59,6 @@
     color: #dde2f4;
     text-align: center;
 }
-.project .project_line {
-    width: 3rem;
-    color: #fff;
-    height: 200px;
-}
 .project .portfolio_p {
     color: #99a1ba;
     font-weight: 600;
@@ -85,8 +80,9 @@
 .project .portfolio_l a:hover {
     color: #dde2f4;
 }
-.pm {
+.project .pm {
     margin-left: 1rem;
+    cursor: pointer;
 }
 .project .project_text {
     font-weight: 500;
@@ -99,9 +95,56 @@
     border: 1px solid #99a1ba;
     padding: 2rem;
 }
-.about_line {
+.project_line {
     color: #dde2f4;
 }
+.cssbuttons-io-button {
+    color: #99a1ba;
+    font-family: inherit;
+    padding: 0.10em;
+    padding-left: 1.2em;
+    font-size: 1.7rem;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: 1px solid #99a1ba;
+    box-shadow: inset 0 0 1.6em -0.6em #99a1ba9f;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    cursor: pointer;
+}
+.cssbuttons-io-button .icon {
+    background: #99a1ba;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    right: 0.3em;
+    transition: all 0.3s;
+}
+.cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+}
+.cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #dde2f4;
+}
+.cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+}
+.cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+}
+  
 /* ==========> Portfolio / Resposywność <========== */
 @media (max-width: 991px) {
     .project {
