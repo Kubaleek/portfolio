@@ -5,10 +5,11 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, RouterOutlet, RouterLink],
+  providers: [],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
-  title = 'portfolio';
 
+export class AppComponent {
+  title = 'portfolio'; 
 }
