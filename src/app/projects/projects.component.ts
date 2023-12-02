@@ -1,16 +1,16 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { Splide }from '@splidejs/splide';
+import { NgxSplideModule } from 'ngx-splide';
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, NgxSplideModule],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css'
 })
 export class ProjectsComponent implements OnInit {
-    ngOnInit(){
-      new Splide('.splide').mount();
+    ngOnInit(): void {
+      
     }
     // Zmienna ViewProject jest początku ustawiona na null,
     // ponieważ jeszcze nie przypisano żadnego projektu do wyświetlenia.

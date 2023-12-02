@@ -125,19 +125,15 @@
 }
 .cssbuttons-io-button .icon {
     background: #99a1ba;
-    margin-left: 1em;
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 2.2em;
-    width: 2.2em;
+    width: calc(100% - 0.6em);
     border-radius: 0.7em;
     right: 0.3em;
     transition: all 0.3s;
-}
-.cssbuttons-io-button:hover .icon {
-    width: calc(100% - 0.6em);
 }
 .cssbuttons-io-button .icon svg {
     width: 1.1em;
