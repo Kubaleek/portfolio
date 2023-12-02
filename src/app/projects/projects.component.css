@@ -88,6 +88,12 @@
     font-weight: 500;
     color: #99a1ba;
 }
+.project .project_text2 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #99a1ba;
+    display: none;
+}
 .project .project_text_tech {
     font-size: 5rem;
 }
@@ -165,6 +171,11 @@
     }
     .project .porftolio_t {
         font-size: 4rem;
+    }
+}
+@media (max-width: 425px){
+    .project .project_text2 {
+        display: block;
     }
 }
 /* ==========> Portfolio /  Design Obrazka <========== */
