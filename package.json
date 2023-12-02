@@ -35,6 +35,7 @@
     "express": "^4.18.2",
     "font-awesome": "^4.7.0",
     "jquery": "^3.7.1",
+    "ngx-splide": "^2.0.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.2"
