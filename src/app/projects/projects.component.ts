@@ -12,8 +12,6 @@ export class ProjectsComponent implements OnInit {
     ngOnInit(): void {
       
     }
-    // Zmienna ViewProject jest początku ustawiona na null,
-    // ponieważ jeszcze nie przypisano żadnego projektu do wyświetlenia.
     ViewProject: string | null = null;
     // Funkcja Pokażania Szczegołówych informacji o projekcie
     ViewOnProject(project: string): void {
