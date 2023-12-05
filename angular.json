@@ -48,16 +48,16 @@
           "configurations": {
             "production": {
               "budgets": [
-              {
+                {
                   "type": "initial",
-                  "maximumWarning": "4mb", 
+                  "maximumWarning": "4mb",
                   "maximumError": "5mb"
-               },
-               {
+                },
+                {
                   "type": "anyComponentStyle",
                   "maximumWarning": "150kb",
                   "maximumError": "150kb"
-               }
+                }
               ],
               "outputHashing": "all"
             },
@@ -104,11 +104,23 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
   },
   "cli": {
-    "analytics": "898026b7-dfcf-48fa-8380-2eb782941c2d"
+    "analytics": "898026b7-dfcf-48fa-8380-2eb782941c2d",
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }

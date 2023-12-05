@@ -1,6 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ProjectsComponent } from './projects.component';
-import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
 
 describe('ProjectsComponent', () => {
   let component: ProjectsComponent;

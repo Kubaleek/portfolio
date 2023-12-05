@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 import { NgxSplideModule } from 'ngx-splide';
 @Component({
   selector: 'app-projects',
@@ -8,10 +8,7 @@ import { NgxSplideModule } from 'ngx-splide';
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css'
 })
-export class ProjectsComponent implements OnInit {
-    ngOnInit(): void {
-      
-    }
+export class ProjectsComponent{
     ViewProject: string | null = null;
     // Funkcja Pokażania Szczegołówych informacji o projekcie
     ViewOnProject(project: string): void {

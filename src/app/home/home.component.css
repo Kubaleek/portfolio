@@ -111,10 +111,6 @@
 .about_line {
     color: #dde2f4;
 }
-.home .about_img {
-    width: 600px;
-    height: 100%;
-}
 /* ==========> About / Resposywność <========== */
 @media (max-width: 768px) {
     .about .about_text {
