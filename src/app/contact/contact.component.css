@@ -88,6 +88,10 @@
     line-height: 56px;
     color: #dde2f4;
 }
+.contact .contact_img {
+    width: 600px;
+    height: 100%;
+}
 .contact .contact_text {
     text-align: center;
     font-size: 2.1rem;
