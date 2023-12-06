@@ -1,6 +1,6 @@
 /* ==========> Rozdział / Strony <========= */
 .section {
-    padding: 10rem 0 2% 0;
+    padding: 2rem 0 2% 0;
     position: relative;
 }
 
@@ -78,9 +78,6 @@
     }
 }
 /* ==========> Kontakt / Rozdział <========= */
-.contact {
-    padding: auto 0 15rem;
-}
 .contact h1 {
     margin: 0 0 10px 0;
     font-size: 5rem;
