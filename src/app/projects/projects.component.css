@@ -43,10 +43,6 @@
     }
 }
 /* ==========> Portfolio / Rozdział <========= */
-.project {
-    padding: auto 0 15rem;
-    
-}
 .project .project_img {
     border: solid 1px #ffffff41;
 }
@@ -57,7 +53,6 @@
     font-weight: 700;
     line-height: 56px;
     color: #dde2f4;
-    text-align: center;
 }
 .project .portfolio_p {
     color: #99a1ba;
@@ -84,6 +79,7 @@
     margin-left: 1rem;
     cursor: pointer;
 }
+/* Text */
 .project .project_text {
     font-weight: 500;
     color: #99a1ba;
@@ -94,6 +90,7 @@
     color: #99a1ba;
     display: none;
 }
+/* Technologia Ikonki */
 .project .project_text_tech {
     font-size: 5rem;
 }
@@ -101,9 +98,11 @@
     border: 1px solid #99a1ba;
     padding: 2rem;
 }
+/* Linia */
 .project_line {
     color: #dde2f4;
 }
+/* Powrót do Portfolio */
 .cssbuttons-io-button {
     color: #99a1ba;
     font-family: inherit;
