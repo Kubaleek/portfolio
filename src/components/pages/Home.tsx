@@ -1,5 +1,6 @@
 import '../../styles/styles.css';
 import logo from "../../assets/img/Logo.png";
+import Project1 from "../../assets/img/project1.jpg";
 
 function Home() {
     return (
@@ -61,7 +62,7 @@ function Home() {
                     <div className="row">
                         <div className="col-lg-6 d-flex flex-column align-items-start justify-content-center d-none d-lg-block">
                             <div className="project-image">
-                                <img src="/src/assets/img/project1.jpg" alt="projekt" />
+                                <img src={Project1} alt="projekt" />
                             </div>
                         </div>
                         <div className="col-lg-6">
