@@ -80,7 +80,7 @@ function Home() {
                                 <li>React</li>
                             </ul>
                             <p className="project-link justify-content-lg-end justify-content-start">
-                                <a href="https://kubaleek.github.io/portfolio/" target='_blank'>
+                                <a href="https://kubaleek.github.io/portfolio/">
                                     <i className="bi bi-github"></i>
                                 </a>
                                 <a href="" target='_blank' className="ms-3">
