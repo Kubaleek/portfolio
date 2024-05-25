@@ -7,7 +7,7 @@ function Projects() {
          <section className="projects d-flex justify-content-center align-items-center" id="projects">
               <div className="container">
                   <hr className="line" />
-                  <h3 className="my-4">Projekty</h3>
+                  <h1 className="my-4">Projekty</h1>
                   <div className="row">
                       <div className="col-lg-6 d-flex flex-column align-items-start justify-content-center d-none d-lg-block">
                           <div className="project-image">
@@ -16,7 +16,7 @@ function Projects() {
                       </div>
                       <div className="col-lg-6">
                           <p className="project-overline text-lg-end text-start">Projekt</p>
-                          <h4 className="project-title text-lg-end text-start">KubalekWeb</h4>
+                          <h2 className="project-title text-lg-end text-start">KubalekWeb</h2>
                           <p className="project-description text-lg-end text-start">
                               Witaj! Stworzyłem własne portfolio które stanowi wizualne
                               i funkcjonalne zaplecze do prezentacji moich umiejętności i projektów, zwracając uwagę na
