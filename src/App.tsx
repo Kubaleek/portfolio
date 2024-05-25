@@ -36,14 +36,15 @@ function App() {
   return (
     <>
         <div className="preloader" id='preloader'>
-          <div className="spinner">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
+        <div className="honeycomb">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
         </div>
         
         <Navbar/>
