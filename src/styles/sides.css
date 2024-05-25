@@ -1,0 +1,94 @@
+.side_right {
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: auto;
+    right: 20px;
+    z-index: 10;
+    color: #c1ff7a;
+  }
+  
+  .side_right .side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .side_right .side a {
+    margin: 20px auto;
+    padding: 10px;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    writing-mode: vertical-rl;
+    color: #c1ff7a83;
+    transition: 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
+  }
+  
+  .side_right .side a:hover {
+    color: #c1ff7a;
+    transform: translateY(-10px);
+  }
+  
+  .side_right .side::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: #c1ff7a;
+  }
+  
+  .side_left {
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: 20px;
+    right: auto;
+    z-index: 10;
+    color: #c1ff7a;
+  }
+  
+  @media (min-width: 1100px) {
+    .side_left {
+      left: 40px;
+    }
+  
+    .side_right {
+      right: 40px;
+    }
+  }
+  
+  .side_left .side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .side_left .side a {
+    padding: 10px;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    writing-mode: vertical-rl;
+    color: #c1ff7a83;
+    transition: 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
+  }
+  
+  .side_left .side a:hover {
+    color: #c1ff7a;
+    transform: translateY(-10px);
+  }
+  
+  .side_left .side::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: #c1ff7a;
+  }

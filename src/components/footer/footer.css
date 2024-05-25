@@ -1,0 +1,33 @@
+.footer {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 55rem;
+    padding-top: 4rem;
+    overflow: hidden;
+}
+
+.footer .line {
+    opacity: 0.5;
+    width: 100%;
+    border-bottom: 1px solid #c1ff7a;
+}
+
+.footer .footer-brand {
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #c1ff7a;
+}
+
+
+.footer p {
+    color: #ccd6f7;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.footer a {
+    font-size: 24px;
+    color: #ccd6f7;
+}

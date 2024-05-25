@@ -1,0 +1,177 @@
+.main {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 60rem;
+    padding-top: 4rem;
+    overflow: hidden;
+}
+.line {
+    opacity: 1;
+    width: 50px;
+    border-bottom: 3px solid #c1ff7a;
+}
+.hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #c1ff7a;
+}
+
+.hero h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #aee670;
+}
+
+
+.hero p {
+    color: #ccd6f7;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 30px;
+    }
+    .hero h2 {
+        font-size: 20px;
+    }
+}
+
+
+.logo-anim {
+    animation-name: logoanim;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+@keyframes logoanim {
+    0% {
+        transform: translateY(0px);
+        transform: scale(1);
+    }
+
+    50% {
+        transform: translateY(30px);
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: translateY(0px);
+        transform: scale(1);
+    }
+}
+
+.about {
+    padding: 4rem 0;
+}
+.about p {
+    color: #ccd6f7;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.about .skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    padding: 0px;
+    overflow: hidden;
+    list-style: none;
+    color: #ccd6f7;
+    font-weight: 500;;
+    text-align: justify;
+}
+
+.about .skills-list li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    font-size: 13px;
+}
+
+.about .skills-list li::before {
+    content: "▹";
+    position: absolute;
+    left: 0px;
+    color: #c1ff7a;
+    font-size: 14px;
+}
+
+.projects p {
+    color: #ccd6f7;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.projects .project-overline {
+    margin: 10px 0px;
+    color: #c1ff7a;
+    font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.projects .project-title {
+    color: #ccd6f7;
+    font-size: clamp(24px, 5vw, 28px);
+}
+
+.projects .project-description {
+    color: #ccd6f7;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.projects .project-techs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    position: relative;
+    z-index: 2;
+    margin: 25px 0px 10px;
+    padding: 0px;
+    list-style: none;
+}
+
+.projects .project-techs li {
+    color: #ccd6f7;
+    font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.projects .project-link {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+    color: #ccd6f7;
+}
+.projects .project-link a {
+    color: #ccd6f7;
+    font-size: 24px;
+    transition: 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.projects .project-link a:hover,
+.projects .project-link a:active,
+.projects .project-link a:focus
+ {
+    color: #c1ff7a;
+}
+
+.projects .project-image {
+    border: 2px solid #c1ff7aa8;
+    box-shadow: 0 10px 30px -15px #c1ff7a62;
+    top: 40px;
+    position: relative;
+}
