@@ -18,7 +18,7 @@ function Navbar() {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ms-auto mt-lg-0 mt-3">
                             <li className="nav-item">
-                                <Link to="portfolio/" className={"nav-link py-2 px-3 me-lg-3  me-0 mb-lg-0 mb-3" + (location.pathname === "/" ? "active" : "")} aria-current="page">
+                                <Link to="/" className={"nav-link py-2 px-3 me-lg-3  me-0 mb-lg-0 mb-3" + (location.pathname === "/" ? "active" : "")} aria-current="page">
                                     Home
                                     <span></span>
                                     <span></span>
@@ -27,7 +27,7 @@ function Navbar() {
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="portfolio/projects" className={"nav-link py-2 px-3 me-lg-3  me-0 mb-lg-0 mb-3" + (location.pathname === "/projects" ? "active" : "")} aria-current="page">
+                                <Link to="/projects" className={"nav-link py-2 px-3 me-lg-3  me-0 mb-lg-0 mb-3" + (location.pathname === "/projects" ? "active" : "")} aria-current="page">
                                     Projekty
                                     <span></span>
                                     <span></span>
