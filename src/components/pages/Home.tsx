@@ -88,36 +88,6 @@ function Home() {
                             </p>
                         </div>
                     </div>
-                    <div className="row">
-                        <div className="col-lg-6">
-                            <p className="project-overline text-lg-start text-end">Projekt</p>
-                            <h4 className="project-title text-lg-start text-end">KubalekWeb</h4>
-                            <p className="project-description text-lg-start text-end">
-                                Witaj! Stworzyłem własne portfolio które stanowi wizualne
-                                i funkcjonalne zaplecze do prezentacji moich umiejętności i projektów, zwracając uwagę na
-                                estetykę i resposywność. Cały projekt został wykonany od zera przeze mnie.
-                            </p>
-                            <ul className="project-techs justify-content-lg-start justify-content-end">
-                                <li className="me-3">HTML</li>
-                                <li className="me-3">CSS</li>
-                                <li className="me-3">Bootstrap</li>
-                                <li>React</li>
-                            </ul>
-                            <p className="project-link justify-content-lg-start justify-content-end">
-                                <a href="https://github.com/Kubaleek/portfolio" target='_blank'>
-                                    <i className="bi bi-github"></i>
-                                </a>
-                                <a href="" target='_blank' className="ms-3">
-                                    <i className="bi bi-box-arrow-up-right"></i>
-                                </a>
-                            </p>
-                        </div>
-                        <div className="col-lg-6 d-flex flex-column align-items-start justify-content-center d-none d-lg-block">
-                            <div className="project-image">
-                                <img src="/src/assets/img/project1.jpg" alt="projekt" />
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </section>
         </main>

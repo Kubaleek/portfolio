@@ -1,7 +1,10 @@
 import './App.css'
 import Navbar from './components/navbar/navbar'
 import Footer from './components/footer/footer'
-import { useEffect } from 'react';
+import { useEffect } from 'react'
+import Home from './components/pages/Home'
+import { Route, Routes } from 'react-router-dom'
+import Projects from './components/pages/projects'
 
 function showPreLoader(){
   const loader = document.querySelector('#preloader');
@@ -42,9 +45,13 @@ function App() {
             <div></div>
           </div>
         </div>
-        {/* Navbar */}
+        
         <Navbar/>
-        {/* Main */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
+
         <div className="side_left d-none d-lg-block">
           <div className="side">
               <a href="https://github.com/Kubaleek" target='_blank'>
@@ -63,7 +70,6 @@ function App() {
               <a href="mailto:kuba.krol.ldz@gmail.com">kuba.krol.ldz@gmail.com</a>
           </div>
         </div>
-        {/* Footer */}
         <Footer/>
     </>
   )
