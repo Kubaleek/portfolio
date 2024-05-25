@@ -35,18 +35,7 @@ function App() {
   })
   return (
     <>
-        <div className="preloader" id='preloader'>
-        <div className="honeycomb">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        </div>
-        
+    
         <Navbar/>
         <Routes>
           <Route path="/" element={<Home />} />
