@@ -8,7 +8,7 @@ import Projects from './pages/Projects'
 function App() {
   return (
     <>
-      <Navbar/>
+          <Navbar/>
           <Routes>
             <Route index element={<Home />} />
             <Route path="/" element={<Home />} />
