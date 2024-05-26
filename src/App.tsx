@@ -2,7 +2,7 @@ import './App.css'
 import Navbar from './components/navbar/navbar'
 import Footer from './components/footer/footer'
 import Home from './components/pages/Home'
-import {Route, Routes } from 'react-router-dom'
+import {BrowserRouter, Route, Routes } from 'react-router-dom'
 import Projects from './components/pages/projects'
 
 function App() {
@@ -10,12 +10,13 @@ function App() {
     <>
     
         <Navbar/>
-        
-        <Routes>
-          <Route index element={<Home />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-        </Routes>
+        <BrowserRouter>
+          <Routes>
+            <Route index element={<Home />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+          </Routes>
+        </BrowserRouter>
 
         <div className="side_left d-none d-lg-block">
           <div className="side">
