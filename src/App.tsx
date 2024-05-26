@@ -44,13 +44,13 @@ function App() {
 
         <div className="side_left d-none d-lg-block">
           <div className="side">
-              <a href="https://github.com/Kubaleek" target='_blank'>
+              <a href="https://github.com/Kubaleek" target='_blank' title="Github">
                 <i className="bi bi-github"></i>
               </a>
-              <a href="https://www.instagram.com/kubalekweb/" target='_blank'>
+              <a href="https://www.instagram.com/kubalekweb/" target='_blank' title="Instagram">
                 <i className="bi bi-instagram"></i>
               </a>
-              <a href="https://www.linkedin.com/in/kuba-kr%C3%B3l-9b4946274/" target='_blank'>
+              <a href="https://www.linkedin.com/in/kuba-kr%C3%B3l-9b4946274/"  target='_blank'  title="Linkedin">
                 <i className="bi bi-linkedin mb-3"></i>
               </a>
           </div>
