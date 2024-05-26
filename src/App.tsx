@@ -3,7 +3,7 @@ import Navbar from './components/navbar/navbar'
 import Footer from './components/footer/footer'
 import Home from './pages/Home'
 import {Route, Routes } from 'react-router-dom'
-import Project from './pages/projects'
+import Projects from './pages/projects'
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
           <Routes>
             <Route index element={<Home />} />
             <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<Project />} />
+            <Route path="/projects" element={<Projects />} />
           </Routes>
 
         <div className="side_left d-none d-lg-block">

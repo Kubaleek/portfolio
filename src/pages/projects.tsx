@@ -1,7 +1,7 @@
 import '../../styles/styles.css';
 import Project1 from "../../assets/img/project1.jpg";
 
-function Project() {
+function Projects() {
   return (
     <main className="main px-lg-5 px-0">
          <section className="projects d-flex justify-content-center align-items-center" id="projects">
@@ -44,4 +44,4 @@ function Project() {
   );
 }
 
-export default Project
+export default Projects
