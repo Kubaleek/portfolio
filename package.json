@@ -4,7 +4,6 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "homepage": "https://kubaleek.github.io/portfolio/",
     "dev": "vite",
     "predeploy": "npm run build ",
     "deploy": "gh-pages -d dist -b gh-pages",
