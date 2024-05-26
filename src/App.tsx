@@ -3,7 +3,7 @@ import Navbar from './components/navbar/navbar'
 import Footer from './components/footer/footer'
 import { useEffect }  from 'react'
 import Home from './components/pages/Home'
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, BrowserRouter } from 'react-router-dom'
 import Projects from './components/pages/projects'
 
 function showPreLoader(){
@@ -37,6 +37,9 @@ function App() {
     <>
     
         <Navbar/>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <>
+        <Navbar/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
@@ -60,6 +63,9 @@ function App() {
               <a href="mailto:kuba.krol.ldz@gmail.com">kuba.krol.ldz@gmail.com</a>
           </div>
         </div>
+        <Footer/>
+      </>
+    </BrowserRouter>
         <Footer/>
     </>
   )
