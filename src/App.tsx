@@ -2,19 +2,19 @@ import './App.css'
 import Navbar from './components/navbar/navbar'
 import Footer from './components/footer/footer'
 import Home from './pages/Home'
+import {Route, Routes } from 'react-router-dom'
 import Projects from './pages/Projects'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
-    <Router>
-      <>
+    <>
+    
         <Navbar/>
-        <Routes>
-          <Route index element={<Home />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-        </Routes>
+          <Routes>
+            <Route index element={<Home />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+          </Routes>
 
         <div className="side_left d-none d-lg-block">
           <div className="side">
@@ -35,8 +35,7 @@ function App() {
           </div>
         </div>
         <Footer/>
-      </>
-    </Router>
+    </>
   )
 }
 
