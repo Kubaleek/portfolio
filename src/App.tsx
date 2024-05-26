@@ -1,27 +1,19 @@
 import './App.css'
 import Navbar from './components/navbar/navbar'
 import Footer from './components/footer/footer'
-import {
-  BrowserRouter as Router, Routes, Route,
-} from "react-router-dom";
+import {Routes, Route, } from "react-router-dom";
 import Home from './pages/Home'
 import Projects from './pages/Projects'
 
 function App() {
   return (
     <>
+      <Navbar/>
       <main className="main px-lg-5 px-0">
-        <Router>
-            <Navbar/>
-            <Routes>
-              <Route path="/">
-                <Home />
-              </Route>
-              <Route path="/projects">
-                <Projects />
-              </Route>
-            </Routes>
-        </Router>
+          <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/projects" element={<Projects />} />
+          </Routes>
       </main>
 
         <div className="side_left d-none d-lg-block">
