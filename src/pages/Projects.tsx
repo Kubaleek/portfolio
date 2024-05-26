@@ -32,7 +32,7 @@ function Projects() {
                                 <a href="https://github.com/Kubaleek/portfolio" target='_blank' aria-label="Link to Github">
                                     <i className="bi bi-github"></i>
                                 </a>
-                              <a href="https://kubaleek.github.io/portfolio/" className="ms-3" aria-label="Link to Portfolio">
+                              <a href="https://kubaleekweb.netlify.app/" className="ms-3" aria-label="Link to Portfolio">
                                   <i className="bi bi-box-arrow-up-right"></i>
                               </a>
                           </p>
