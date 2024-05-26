@@ -8,12 +8,14 @@ import Projects from './pages/Projects'
 function App() {
   return (
     <>
-          <Navbar/>
-          <Routes>
-            <Route index element={<Home />} />
-            <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<Projects />} />
-          </Routes>
+      <Navbar/>
+      <main className="main px-lg-5 px-0">
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
+      </main>
 
         <div className="side_left d-none d-lg-block">
           <div className="side">

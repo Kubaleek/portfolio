@@ -4,7 +4,7 @@ import Project1 from "../assets/img/project1.jpg";
 
 function Home() {
     return (
-        <main className="main px-lg-5 px-0">
+        <>
             <section className="hero d-flex justify-content-center align-items-center" id="hero">
                 <div className="container">
                     <div className="row">
@@ -91,7 +91,7 @@ function Home() {
                     </div>
                 </div>
             </section>
-        </main>
+        </>
     );
 }
 

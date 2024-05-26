@@ -1,5 +1,5 @@
 import "./navbar.css";
-import { Link , useLocation } from "react-router-dom";
+import { NavLink, Link , useLocation } from "react-router-dom";
 import "../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 
 function Navbar() {
@@ -27,13 +27,13 @@ function Navbar() {
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/projects" className={"nav-link py-2 px-3 me-lg-3  me-0 mb-lg-0 mb-3" + (location.pathname === "/projects" ? " active" : "")} aria-current="page">
+                                <NavLink to="projects" className={"nav-link py-2 px-3 me-lg-3  me-0 mb-lg-0 mb-3" + (location.pathname === "/projects" ? " active" : "")} aria-current="page">
                                     Projekty
                                     <span></span>
                                     <span></span>
                                     <span></span>
                                     <span></span>
-                                </Link>
+                                </NavLink>
                             </li>
                         </ul>
                     </div>
