@@ -5,6 +5,7 @@ import { useEffect }  from 'react'
 import Home from './components/pages/Home'
 import { Route, Routes } from 'react-router-dom'
 import Projects from './components/pages/projects'
+import { BrowserRouter } from 'react-router-dom'
 
 function showPreLoader(){
   const loader = document.querySelector('#preloader');
@@ -35,8 +36,8 @@ function App() {
   })
   return (
     <>
-    
-        <Navbar/>
+      <BrowserRouter basename="/portfolio">
+      <Navbar/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
@@ -61,6 +62,7 @@ function App() {
           </div>
         </div>
         <Footer/>
+      </BrowserRouter>
     </>
   )
 }
