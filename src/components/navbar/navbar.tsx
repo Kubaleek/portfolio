@@ -9,7 +9,7 @@ function Navbar() {
         <header className="header py-4">
             <nav className="navbar navbar-expand-lg">
                 <div className="container d-flex align-items-center">
-                    <a className="navbar-brand">
+                    <a href="https://kubaleek.github.io/portfolio/" className="navbar-brand">
                         KubalekWEB
                     </a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
