@@ -8,7 +8,7 @@ import Projects from './components/pages/projects'
 function App() {
   return (
     <>
-    <Router basename="/portfolio">
+    <Router>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
