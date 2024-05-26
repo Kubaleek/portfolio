@@ -27,9 +27,7 @@
   transition: 0.5s;
 }
 
-.header nav .nav-link:hover {
-  color: initial;
-}
+
 
 
 .header nav .nav-link span {

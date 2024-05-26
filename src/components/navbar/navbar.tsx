@@ -20,11 +20,19 @@ function Navbar() {
                             <li className="nav-item">
                                 <Link to="/" className={"nav-link py-2 px-3 me-lg-3  me-0 mb-lg-0 mb-3" + (location.pathname === "/" ? " active" : "")} aria-current="page">
                                     Strona główna
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
                                 </Link>
                             </li>
                             <li className="nav-item">
                                 <NavLink to="/projects" className={"nav-link py-2 px-3 me-lg-3  me-0 mb-lg-0 mb-3" + (location.pathname === "/projects" ? " active" : "")} aria-current="page">
                                     Projekty
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
                                 </NavLink>
                             </li>
                         </ul>
