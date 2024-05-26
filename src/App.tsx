@@ -8,12 +8,13 @@ import Projects from './components/pages/projects'
 function App() {
   return (
     <>
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-      </Routes>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
+      </Router>
       <div className="side_left d-none d-lg-block">
         <div className="side">
           <a href="https://github.com/Kubaleek" target='_blank' title="Github">
@@ -33,7 +34,6 @@ function App() {
         </div>
       </div>
       <Footer />
-    </Router>
     </>
   )
 }
