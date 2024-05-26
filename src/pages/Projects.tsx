@@ -1,5 +1,5 @@
-import '../../styles/styles.css';
-import Project1 from "../../assets/img/project1.jpg";
+import '../styles/styles.css';
+import Project1 from "../assets/img/project1.jpg";
 
 function Projects() {
   return (

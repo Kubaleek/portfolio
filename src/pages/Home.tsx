@@ -1,6 +1,6 @@
-import '../../styles/styles.css';
-import logo from "../../assets/img/Logo.png";
-import Project1 from "../../assets/img/project1.jpg";
+import '../styles/styles.css';
+import logo from "../assets/img/Logo.png";
+import Project1 from "../assets/img/project1.jpg";
 
 function Home() {
     return (
