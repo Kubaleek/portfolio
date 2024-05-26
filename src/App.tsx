@@ -1,49 +1,22 @@
 import './App.css'
 import Navbar from './components/navbar/navbar'
 import Footer from './components/footer/footer'
-import { useEffect }  from 'react'
 import Home from './components/pages/Home'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 import Projects from './components/pages/projects'
 
-function showPreLoader(){
-  const loader = document.querySelector('#preloader');
-  if (loader){
-    loader.classList.add('show-preloader');
-    document.body.style.overflow = 'hidden';
-  }
-}
-
-function hidePreLoader() {
-  const loader = document.querySelector('#preloader');
-  if (loader) {
-    setTimeout(() => {
-      loader.classList.remove('show-preloader');
-      document.body.style.overflow = '';
-    }, 1000); 
-  }
-}
-
 function App() {
-  useEffect(() => {
-    showPreLoader();
-    window.addEventListener('load', hidePreLoader);
-
-    return () => {
-      window.removeEventListener('load', hidePreLoader);
-    }
-  })
   return (
     <>
     
         <Navbar/>
-        <BrowserRouter>
+        <HashRouter>
         <Routes>
           <Route index element={<Home />} />
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
         </Routes>
-        </BrowserRouter>
+        </HashRouter>
 
         <div className="side_left d-none d-lg-block">
           <div className="side">
