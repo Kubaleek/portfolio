@@ -1,14 +1,15 @@
 import './App.css'
 import Navbar from './components/navbar/navbar'
 import Footer from './components/footer/footer'
-import {Route, Routes } from 'react-router-dom'
+import {BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Projects from './pages/Projects'
 
 function App() {
   return (
     <>
-      <Navbar/>
+    <BrowserRouter>
+    <Navbar/>
       <main className="main px-lg-5 px-0">
         <Routes>
           <Route index element={<Home />} />
@@ -36,6 +37,7 @@ function App() {
           </div>
         </div>
         <Footer/>
+    </BrowserRouter>
     </>
   )
 }
