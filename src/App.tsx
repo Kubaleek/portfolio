@@ -2,19 +2,20 @@ import './App.css'
 import Navbar from './components/navbar/navbar'
 import Footer from './components/footer/footer'
 import Home from './pages/Home'
-import {Route, Routes } from 'react-router-dom'
+import {Router, Route, Routes } from 'react-router-dom'
 import Projects from './pages/Projects'
 
 function App() {
   return (
     <>
-    
-        <Navbar/>
+      <Router>
+          <Navbar/>
           <Routes>
             <Route index element={<Home />} />
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
           </Routes>
+      </Router>
 
         <div className="side_left d-none d-lg-block">
           <div className="side">
