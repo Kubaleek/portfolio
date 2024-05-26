@@ -11,6 +11,13 @@
   color: #c1ff7a;
 }
 
+@media (max-width: 768px) {
+  .header nav .navbar-brand {
+    font-size: 20px;
+  }
+  
+}
+
 .header nav .nav-link {
   cursor: pointer;
   position: relative;
