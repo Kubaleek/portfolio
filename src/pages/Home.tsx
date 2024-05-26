@@ -13,7 +13,7 @@ function Home() {
                             <h1>Kuba "Kubalek" Król</h1>
                             <h2>Junior Frontend Developer</h2>
                             <p>
-                                Cześć! Witaj na mojej stronie portfolio. Jestem programistą Frontend, specjalizuję się w tworzeniu stron internetowych.
+                                Cześć! Witaj na mojej stronie portfolio.
                             </p>
                         </div>
                         <div className="col-lg-6 d-flex justify-content-center align-items-center d-lg-block d-none">
