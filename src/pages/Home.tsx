@@ -39,6 +39,7 @@ function Home() {
                         <li>CSS</li>
                         <li>Javascript</li>
                         <li>Bootstrap</li>
+                        <li>Tailwind</li>
                         <li>Git</li>
                         <li>React</li>
                         <li>Typescript</li>
